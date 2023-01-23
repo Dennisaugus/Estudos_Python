@@ -63,7 +63,7 @@ else:
 #Podemos facilmente ordenar uma lista
 print(lista1.sort())
 print(lista1)
-print(lista5.sort())
+print(lista5.sort()) #Ordena string
 print(lista5)
 
 #Podemos facilmente contar o numero de ocorrencias de um valor em uma lista 
