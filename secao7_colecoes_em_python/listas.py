@@ -15,6 +15,8 @@ Já em Python:
 
 As listas em Python são representadas por colchetes: []
 
+Listas são mutaveis: Ou seja, podem mudar constantemente.
+
 exemplos no terminal python:
 
 type("a")
