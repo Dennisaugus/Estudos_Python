@@ -39,7 +39,7 @@ print(paises['ru']) # Caso tentamos fazer um acesso utilizando uma chave que nã
 print(paises.get('br'))
 print(paises.get('ru'))
 
-#Caso o get não encontre o objeto com a chave informada será retornado o valor None e não serpa gerado o KeyError
+#Caso o get não encontre o objeto com a chave informada será retornado o valor None e não sera gerado o KeyError
 russia = paises.get('ru')
 if russia:
     print('Encontrei o pais')
@@ -54,6 +54,9 @@ print(f'Encontrei o pais {pais}')
 print('br' in paises) # -> True
 print('ru' in paises) # -> False
 print('Estados Unidos' in paises) # -> False
+
+# Podemos verificar se determinado valor está contido no dicionário também
+print('Brasil' in paises.values())
 
 if 'ru' in paises:
     russia = paises['ru']
