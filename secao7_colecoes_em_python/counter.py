@@ -1,9 +1,9 @@
 """
-Módulo Collections - Counter (COntador)
+Módulo Collections - Counter (Contador)
 
 Collection -> High-performance Container Datetypes
 
-Counter -> Recbe um interável como parametro e cria um objeto do tipo Collections Counter que é parecido 
+Counter -> Recebe um interável como parametro e cria um objeto do tipo Collections Counter que é parecido 
 com um dicionário, contendo como chave o elemento da lista passada como parametro e como valor a quantidade
 de ocorrências desse elemento.
 
@@ -13,7 +13,7 @@ de ocorrências desse elemento.
 
 # Exemplo 1
 
-# Podemos utilizar qualquer iterável, aqui usamos uma lista
+# Podemos utilizar qualquer iterável usan uma lista
 from collections import Counter
 list = [11,1,1,1,2,34,4,555,555,67,8,8,5,3,1]
 # Counter({1: 4, 555: 2, 8: 2, 11: 1, 2: 1, 34: 1, 4: 1, 67: 1, 5: 1, 3: 1})
