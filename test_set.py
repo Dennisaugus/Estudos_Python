@@ -53,3 +53,35 @@ print(type(set3))
 
 for valor in set3:
     print(valor)
+
+
+cidades = ['Sao Paulo','Cuiaba','Recife','Sao Paulo','Florianopolis','Capina Grande']
+print(cidades)
+print(type(cidades))
+
+print(len(set(cidades)))
+
+lista_nomes = ['Dennis','Dennis','Ana','Maria','Jose']
+print(lista_nomes)
+print(f'Tinha 2 nomes na lista, então excluir um e agora está assim a lista: {len(set(lista_nomes))} ')
+
+lista_nomes.add('Marcelo')
+lista_nomes.add('Catarina')
+lista_nomes.add('Pedro')
+
+lista_nomes.remove('Dennis')
+lista_nomes.remove('Ana')
+lista_nomes.discard('Catarina')
+
+#Deep Copy
+nova_lista_nomes = lista_nomes.copy()
+print(nova_lista_nomes)
+nova_lista_nomes.add('Joselino')
+print(nova_lista_nomes)
+
+#Shallow Copy
+nova_lista_nomes = lista_nomes
+nova_lista_nomes.add('Marta')
+print(nova_lista_nomes)
+
+lista_nomes.clear()
