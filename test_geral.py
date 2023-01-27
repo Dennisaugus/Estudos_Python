@@ -1,5 +1,5 @@
-for num in range(45, -1, -2):
-    print(num)
+#for num in range(45, -1, -2):
+#    print(num)
 
 
 
@@ -88,3 +88,20 @@ else:
 
 
 """
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
