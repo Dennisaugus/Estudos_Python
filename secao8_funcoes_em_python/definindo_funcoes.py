@@ -94,3 +94,33 @@ for n in range(4):
 canta = cantar_parabens # aqui é sem o parenteses
 
 canta()
+
+
+# Exemplo mais prático com funções:
+def media_aluno(media):
+    if media >= 7:
+        print(f'aluno aprovado com a nota: {media}')
+    elif media <7 and media > 5:
+        print(f'aluno em recuperação com a nota: {media}')
+    else:
+        print(f'aluno reprovado com a nota: {media}')
+        
+
+media = float(input('Informa a nota do aluno:'))
+media_aluno(media)
+
+
+def calcular_pagamento(qtd_horas, valor_hora):
+    horas = float(qtd_horas)
+    taxa = float(valor_hora)
+    if horas <= 40:
+        salario = horas * taxa
+    else:
+        h_excd = horas - 40
+        salario = 40 * taxa + (h_excd * (1.5 * taxa))
+    return salario
+
+str_horas = input('Digite as horas: ')
+str_taxa = input('Digite a Taxa: ')
+total_salario = calcular_pagamento(str_horas, str_taxa)
+print('O valor de seus rendimentos é R$', total_salario)
