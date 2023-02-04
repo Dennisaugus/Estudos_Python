@@ -121,5 +121,45 @@ print(diz_oi())
 
 # OBS: Se tivermos uma variável local com o mesmo nome da variavel global, a local terá preferencia 
 
+# ATENÇÃO com variaveis globais (Se puder evitar, evite!)
+
+""" 
+total = 0
+
+def incremento():
+    total = total + 1 #UnboundLocalError (A variavel local está sendo utilizada para processamento sem ter sido inicializada)
+    return total 
+
+print(incremento())
+
+"""
+# Forma correta 
+
+total = 0 
+
+def incrementa():
+    global total
+    total = total + 1
+    return total
+
+print(incrementa())
+print(incrementa())
+print(incrementa())
 
 
+# Podemos ter funções que são declaradas dentro de funções, e também tem uma forma especial de escopo de variavel
+
+def fora():
+    contador = 0
+
+    def dentro():
+        nonlocal contador #nonlocal é para utilizar uma variavel que não é local e nem global, é uma variavel que está na função acima 
+        contador = contador + 1
+        return contador
+    return dentro()
+
+print(fora())
+print(fora())
+print(fora())
+
+# print(dentro()) #NameError
