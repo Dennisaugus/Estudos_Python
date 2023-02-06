@@ -30,7 +30,7 @@ print(soma_todos_numeros(4,6,7,8))
 
 def soma_todos_numeros(*args):
    return sum(args)
-   """ tota = 0
+   """ total = 0
     for numero in args:
         total += numero
     return total 
