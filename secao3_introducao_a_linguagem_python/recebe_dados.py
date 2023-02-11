@@ -1,5 +1,5 @@
 """
-Recbendo dados do usuário:
+Recebendo dados do usuário:
 
 input -> entrada de dados
 

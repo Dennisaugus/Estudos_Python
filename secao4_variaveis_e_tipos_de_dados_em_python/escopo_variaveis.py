@@ -27,7 +27,8 @@ Exemplo em Java:
 int numero = 42;
 
 """
-numero = 42 #Exemplo de variável global
+#Exemplo de variável global
+numero = 42 
 print(numero)
 print(type(numero))
 #processo de atribuição

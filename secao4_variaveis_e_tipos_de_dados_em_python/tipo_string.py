@@ -1,7 +1,7 @@
 """
 Tipo string
 
-Em python um dade é considerado do tipo string sempre que:
+Em python um dado é considerado do tipo string sempre que:
 
 - Estiver entre aspas simples -> 'uma string', '2234', 'a', 'True'. '45.6'
 - Estiver entre aspas duplas -> "uma string", "213", "b" , "False", "45.7"
