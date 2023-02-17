@@ -51,3 +51,4 @@ for n in reversed(range(0,10)):
 # Apesar que também já vimos como fazer isso utilizando o próprio range()
 for n in range(9, -1, -1):
     print(n)
+    
