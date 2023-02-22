@@ -48,7 +48,7 @@ print(nome6[13], nome6[7])
 print(nome6[::-1]) #começa do primeiro elemento, depois vá ao ultimo elemente e depois inverta
 print(nome[::-1]) # Inversão da String Pythonico
 
-print(nome6.replace(('D', 'E')))
+print(nome6.replace('D', 'E'))
 
 texto = 'socorram me subino onibus em marrocos'
 print(texto)
