@@ -78,6 +78,35 @@ a)
 dict = {}  #vai dar certo (dict = {'dennis': 'meu nome'})
 print(dict['Dennis'])
 
+b)
+dict = {'Python':'Console'}
+print(dict['Dennis'])
+
+
+
+7 - AttributeError -> Ocorre quando uma variavel não tem um atributo/função.
+
+# Exemplos AtrributeError 
+a)
+tupla = (11,2,31,4)
+print(tupla.sort())
+
+
+8 - IndentationError -> Ocorre quando não respeitamos a indentação do Python (4 espaços)
+
+# Exemplos IndentationError
+
+a)
+def nova():
+print('Dennis')
+
+b)
+for i in range(10):
+i + 1
+
+
+OBS: Exceptions e Erros são sinônimos na programação.
+OBS: Importante lê e prestar atenção na saída de erro.
 """
 
 
