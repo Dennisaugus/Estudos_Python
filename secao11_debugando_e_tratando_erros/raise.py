@@ -14,10 +14,9 @@ raise TipoDoError('Mensagem de erro')
 # Exemplo:
 raise ValueError('Valor incorreto')
 
+
 """
-
 # Exemplo real:
-
 def colore(texto, cor):
     cores = ('verde','amarelo','azul','vermelho')
     if type(texto) is not str:
@@ -30,3 +29,20 @@ def colore(texto, cor):
     print(f'o texto é {texto} e a cor é {cor}')
     
 colore('dennis', 'verde')
+
+
+def user(nome,cpf,numero,sexo):
+    genero = ('Masculino', 'Feminino')
+    if type(nome) is not str:
+        raise TypeError('é necessário passar apenas letras para o nome')
+    if type(cpf) is not int:
+        raise TypeError('é necessário passar apenas números para o cpf')
+    if type(numero) is not int:
+        raise TypeError('é necessário passar apenas números para o telefone')
+    if type(sexo) is not str:
+        raise TypeError('é necessário passar apenas letras para o sexo')
+    if sexo not in genero:
+        raise ValueError(f'é necessário que passe apenas esse dois sexos: {genero}')
+    print(f'O usuário do nome: {nome} com o CPF: {cpf}, do número: {numero} e do genero: {sexo}')
+
+user('Dennis',10311444474,948847011,'Masculino')
