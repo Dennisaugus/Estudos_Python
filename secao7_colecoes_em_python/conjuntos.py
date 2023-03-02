@@ -4,7 +4,7 @@ Conjuntos
 
 - Aqui no Python, os conjuntos são chamados de Sets.
 
-Disto isto, da mesmo forma que na Matemática:
+Dito isto, da mesmo forma que na Matemática:
 
 - Sets (conjuntos) não possuem valores duplicados;
 - Sets (conjuntos) não possuem valores ordenados;
@@ -43,7 +43,7 @@ s = set('Dennis Augusto')
 print(s)
 
 #podemos gerar um set de uma Lista ou tupla
-lista = [1,2,2,3,4,5,6,7,7,8,]
+lista = [1,2,2,3,4,5,6,7,7,8]
 set(lista)
 
 tupla = (1,2,2,3,4,5,6,4,2,3)
