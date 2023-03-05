@@ -7,8 +7,8 @@ do nosso codigo
 
 Os erros mais comuns:
 
-1 - SyntaxError -> Ocorre quando o python encontra um erro de sintaxe. Ou seja, você escreveu algo que 
-o Python não reconhece como parte da linguagem.
+1 - SyntaxError -> Ocorre quando o python encontra um erro de sintaxe. Ou seja, você escreveu
+                   algo que o Python não reconhece como parte da linguagem.
 
 # Exemplos SyntaxError
 a)
@@ -50,8 +50,8 @@ print('Dennis' + [])
 print('Dennis' + 4)
 
 
-4 - IndexError -> Ocorre quando tentamos acessar um elemento em uma lista ou outro tipo de dado indexado utilizando
-um índice inválido.
+4 - IndexError -> Ocorre quando tentamos acessar um elemento em uma lista ou outro 
+                  tipo de dado indexado utilizando um índice inválido.
 
 # Exemplos de IndexError 
 a)
@@ -64,8 +64,8 @@ tupla = ('Dennis',)
 print(tupla[0][10])
 
 
-5 - ValueError -> Ocorre quando uma função ou operação built-in (integrada) recebe um argumento com o tipo
-correto mas valor inapropriado.
+5 - ValueError -> Ocorre quando uma função ou operação built-in (integrada) recebe um argumento 
+                  com o tipo correto mas valor inapropriado.
 
 # Exemplos de ValueError
 print(int('Dennis'))
