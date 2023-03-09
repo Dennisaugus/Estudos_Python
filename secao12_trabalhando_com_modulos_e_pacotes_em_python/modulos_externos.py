@@ -10,12 +10,11 @@ colorama -> é utilizado para permitir impressão de textos coloridos no termina
 """
 #Utilizando o pacote instalado 
 # pip install colorama
-"""
 from colorama import init,Fore 
 init()
 print(Fore.BLACK + 'Dennis')
 print(Fore.BLUE + 'Dennis Augusto')
-"""
+
 import pydf
 pdf = pydf.generate_pdf('<h1> Dennis</h1>')
 with open('test_doc.pdf','wb') as f:
