@@ -1,0 +1,3 @@
+Eu estou estudando Python.
+todo o processo de conceitos de Python.
+Outro texto.
