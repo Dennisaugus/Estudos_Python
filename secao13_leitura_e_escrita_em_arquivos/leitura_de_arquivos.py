@@ -39,7 +39,7 @@ print(retorno)
 # OBS: O python utiliza um recurso para trabalhar com arquivos chamado cursor. Esse cursor 
 # funciona como o cursor quando estamos escrevendo.
 
-#print(arquivo.read())
+# print(arquivo.read())
 # OBS: a função read() lê todo o conteudo do arquivo.
 
 

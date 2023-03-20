@@ -1,3 +1,6 @@
 Eu estou estudando Python.
 todo o processo de conceitos de Python.
 Outro texto.
+Este curso esta me ajudando a ficar mais expert em Python
+Neste momento, estou aprendendo a trabalhar com arquivos 
+criando mais um conteudo
