@@ -48,7 +48,7 @@ Passos para se trabalhar com um arquivo:
 """
 
 # 1 - abrir o arquivo:
-arquivo = open('/home/aqrl-dennis/PycharmProjects/Estudos_Python/secao13_leitura_e_escrita_em_arquivos/texto.txt')
+arquivo = open('texto.txt')
 
 # 2 - Trabalhar o arquivo:
 print(arquivo.read())

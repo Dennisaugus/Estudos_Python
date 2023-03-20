@@ -22,7 +22,7 @@ mode r -> Mode de Leitura. r -> read() -> Ler
 
 #Exemplo
 
-arquivo = open('/home/aqrl-dennis/PycharmProjects/Estudos_Python/secao13_leitura_e_escrita_em_arquivos/texto.txt')
+arquivo = open('texto.txt')
 
 # print(arquivo)
 # print(type(arquivo))
