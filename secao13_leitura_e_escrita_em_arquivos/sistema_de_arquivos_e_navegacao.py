@@ -42,3 +42,34 @@ print(os.uname())
 import sys
 print(sys.platform)
 
+# Processo de junção de diretorios 
+print(os.getcwd()) # /dir1/dir1.1/dir1.1.1
+res = os.path.join(os.getcwd(),'dir1.1.1.1')
+os.chdir(res)
+print(os.getcwd()) # /dir1/dir1.1/dir1.1.1/dir1.1.1.1
+
+# Veja que o os.path.join() recebe dois parâmetros, sendo o primeiro 
+# o diretório atual e o segundo o diretório que será juntado ao atual.
+
+
+# Podemos listar os arquivos e diretórios com o listdir()
+print(os.listdir())
+
+# Podemos listar os arquivos e diretórios com mais detalhes com scandir()
+
+scanner = os.scandir()
+arquivos = list(scanner)
+
+print(os.scandir('/etc'))
+print(list(os.scandir('/etc')))
+
+print(arquivos[0].inode()) # número desse elemento na arvore de diretórios
+print(arquivos[0].is_dir()) # é um diretório? false 
+print(arquivos[0].is_file()) # é um arquivo? true
+print(arquivos[0].is_symlink()) # é um link simbolico? false
+print(arquivos[0].name) # nome do arquivo 
+print(arquivos[0].path) # caminho até o arquivo 
+print(arquivos[0].stat()) # Estatisticas sobre o arquivo 
+
+#OBS: Quando utilizamos a função scandir() nós precisamos fechá-las,
+# assim quando abrimos um arquivo.  
