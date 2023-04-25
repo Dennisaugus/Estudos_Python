@@ -1,7 +1,7 @@
 """
 Escopo de variáveis
 
-/       ------escopo do espaço--------           /
+/       ------escopo do espaço--------       /
 
 Dois casos de Escopo
 

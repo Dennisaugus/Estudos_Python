@@ -64,4 +64,78 @@ os.rename('dennis2/novo2/outro3/teste.txt','dennis.txt')
 # ATENÇÃO! tome cuidado com os comandos de deleção. Ao deletarmos um arquivo ou diretório, 
 # eles não vão para a lixeira. Eles somem.
 
+# Removendo arquivos
 os.remove('novo.txt')
+
+# OBS: Se você estiver no Windows e o arquivo que você for deletar estiver em uso, você tera um erro.
+# OBS: Caso o arquivo não exista, teremos o FileNotFoundError
+
+# OBS: Se você informar um diretorio ao invés de um arquivo, teremos um IsADirectoryError
+
+
+# Removendo diretorios vazios
+os.rmdir('templates')
+
+# OBS: Se o diretorio tiver qualquer conteúdo, teremos um OSError
+# OBS: Se o diretorio não existir teremos um FileNotFoundError
+
+# Removendo uma arvore de diretorios    
+os.removedirs('templates/outro/mais')
+
+# Se algum dos diretorios contiver arquivos ou outros diretórios, o processo para.
+
+#ATENÇÃO: Ao remover arquivos e deretórios com Python eles não vão para a lixeira. Eles vão embora.
+
+# Instalando bibliotecas de terceiros 
+# sudo apt-get install lsb-core
+# pip install send2trash
+
+from send2trash import send2trash
+os.remove('arquivo1.txt') # não vai para a lixeira. É deletado imediatamente
+
+send2trash('arquivo2.txt') # Vai para lixeira. Pode ser restaurado 
+# Se o arquivo não existir, teremos OSError
+
+# Removendo diretorio 
+send2trash('teste') # vai para a lixeira 
+
+# Trabalhando com arquivos e diretorios temporários
+import tempfile
+import os
+
+# Criando um diretorio temporário
+with tempfile.TemporaryDirectory() as tmp:
+    print(f'Criei o diretorio temporário em {tmp}')
+    with open(os.path.join(tmp, 'arquivo_temporario.txt'), 'w') as arquivo:
+        arquivo.write('dennis\n')
+    input()
+
+# Estamos criando um diretorio temporario, abrindo o mesmo e dentro dele criando
+# um arquivo para escrevermos um texto. No final, usamos um input() só para mantermos
+# os arquivos temporários 'vivos' dentro dos blocos with.
+
+# OBS: possivelmente, o código acima não irá funcionar se você estiver utilizando
+# o windows. Por conta desse sistema trabalhar de forma diferente com arquivos
+# temporários.
+
+
+# Criando um arquivo temporário 
+with tempfile.TemporaryFile() as tmp:
+    tmp.write(b'dennis\n') # b -> converte uma string para binários 
+    tmp.seek(0)
+    print(tmp.read())
+
+# OBS: em arquivos temporários só conseguimos escrever bits. Por isso, utilizamos b''
+
+# Pode ser feito desta forma também:
+arquivo = tempfile.TemporaryFile()
+arquivo.write(b'dennis augusto\n')
+arquivo.seek(0)
+print(arquivo.read())
+arquivo.close()
+
+arquivo = tempfile.NamedTemporaryFile()
+arquivo.write(b'dennis\n')
+print(arquivo.name)
+input()
+arquivo.close()
