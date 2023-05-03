@@ -139,3 +139,5 @@ arquivo.write(b'dennis\n')
 print(arquivo.name)
 input()
 arquivo.close()
+
+# https://docs.python.org/3/library/os.html?highlight=os#module-os
