@@ -12,10 +12,12 @@ utilizados são fechados após o bloco with.
 
 """
 
-# O bloco with
+# O bloco with - Forma Pythonica de manipular arquivos
 
 with open('texto.txt') as arquivo:
     print(arquivo.readlines())
     print(arquivo.closed)
 
+
 print(arquivo.closed)
+
