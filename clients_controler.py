@@ -1,10 +1,13 @@
-class ClientController:
-    async def get_filters(self, filters_service: FiltersServices) -> dict: 
-        markets = await filters_service.find_markets_filter()
-        channels = await filters_service.find_channels_filter()
-        subchannel = await filters_service.find_subchannel_filter()
-        units = await filters_service.find_units_filter()
+def seja_educado_mesmo(funcao):
+    def sendo_mesmo():
+        print('foi um prazer em conhecer você')
+        funcao()
+        print('Tenha um excelente dia')
+    return sendo_mesmo
 
-        response = {
-            "unit"
-        }
+
+@seja_educado_mesmo
+def apresentacao():
+    print('Meu nome é Dennis')
+
+apresentacao()

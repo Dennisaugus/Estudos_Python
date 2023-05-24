@@ -5,8 +5,6 @@ Decoretors com diferentes assinaturas
 
 A assinatura de uma função é representada pelo seu retorno, nome e parâmetros de entrada.
 
-
-
 """
 
 # Relembrando Decorators 
